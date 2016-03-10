@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  route_id: 1
+  airplane_id: 1
+  pilot_id: 1
+  date: 2016-03-08 16:26:24
+  price: 1.5
+
+two:
+  route_id: 1
+  airplane_id: 1
+  pilot_id: 1
+  date: 2016-03-08 16:26:24
+  price: 1.5
