@@ -13,18 +13,18 @@
 
   <div class="field">
     <%= f.label :route_id %><br>
-    <%= f.select :route_id, Route.all.collect {|r| ["#{r.city_o.name}-#{r.city_d.name}", r.id]}%>
+    <%= f.select :route_id, Route.all.collect {|r| ["#{r.city_o.name_city}-#{r.city_y.name_city}", r.id]}%>
   </div>
   <div class="field">
     <%= f.label :airplane_id %><br>
-    <%= f.select :airplane_id, Avione.all.collect {|a| [a.reference, a.id]} %>
+    <%= f.select :airplane_id, Airplane.all.collect {|a| [a.reference, a.id]} %>
   </div>
   <div class="field">
     <%= f.label :pilot_id %><br>
-    <%= f.select :pilot_id, Pilots.all.collect {|p| ["#{p.name}- #{p.lastname} - #{p.identificacion}", p.id]}%>
+    <%= f.select :pilot_id, Pilot.all.collect {|p| ["#{p.identificacion}-#{p.name}-#{p.lastname}", p.id]}%>
   </div>
   <div class="field">
-    <%= f.label :date, "Fecha" %><br>
+    <%= f.label :date, "Fecha de vuelo" %><br>
     <%= f.datetime_select :date %>
   </div>
   <div class="field">

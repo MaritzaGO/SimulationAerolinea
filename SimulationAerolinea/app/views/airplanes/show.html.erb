@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @airplane.reference %>
+</p>
+
+<p>
+  <strong>State airplane:</strong>
+  <%= @airplane.state_airplane %>
+</p>
+
+<p>
+  <strong>Count passengers:</strong>
+  <%= @airplane.count_passengers %>
+</p>
+
+<%= link_to 'Edit', edit_airplane_path(@airplane) %> |
+<%= link_to 'Back', airplanes_path %>

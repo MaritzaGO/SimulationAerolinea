@@ -12,14 +12,15 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :city_o_id %><br>
-    <%= f.select :city_o_id, City.all.collect {|c| [c.name, c.id]} %>
+    <%= f.label :city_o_id,"Ciudad de origen:"%><br>
+    <%= f.select :city_o_id, City.all.collect {|c| [c.name_city, c.id]} %>
   </div>
   <div class="field">
-    <%= f.label :city_d_id %><br>
-    <%= f.select :city_d_id, City.all.collect {|c| [c.name, c.id]} %>
+    <%= f.label :city_y_id, "Ciudad de destino:"%><br>
+    <%= f.select :city_y_id, City.all.collect {|c| [c.name_city, c.id]} %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+

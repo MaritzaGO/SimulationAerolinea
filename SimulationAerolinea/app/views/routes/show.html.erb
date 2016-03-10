@@ -3,13 +3,13 @@
 <p>
   <h2>Ciudad origen:</h2>
   <span><%= @route.city_o.name %></span>
-<span><%= @route.city_d.country %></span>
+<span><%= @route.city_o.country %></span>
 </p>
 
 <p>
   <h2>Ciudad destino:</h2>
-  <span><%= @route.city_d.name %></span>
- <span><%= @route.city_d.country %></span> 
+  <span><%= @route.city_y.name %></span>
+ <span><%= @route.city_y.country %></span> 
 </p>
 
 <%= link_to 'Edit', edit_route_path(@route) %> |

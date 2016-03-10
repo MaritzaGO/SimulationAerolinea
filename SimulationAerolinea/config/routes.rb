@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
   
+  resources :airplanes
   resources :passengers
   resources :pilots
   resources :cities
   resources :flights
   resources :routes
-  resources :aviones
+
 
 
   get 'flights/:id/buy_ticket/:flight' => 'passengers#buy_ticket', as: "buy_ticket"
