@@ -9,8 +9,8 @@ class Route < ActiveRecord::Base
 validate :city_o_city_y
 
 def city_o_city_y
-	errors.add(:city_y_id, "La ciudad destino debe ser diferente a la ciudad origen")
 	if self.city_y_id == self.city_o_id
+		errors.add(:city_y_id, "La ciudad destino debe ser diferente a la ciudad origen")
 	end
 end
 
