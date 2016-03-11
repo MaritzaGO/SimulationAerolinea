@@ -14,8 +14,8 @@
   <tbody>
     <% @routes.each do |route| %>
       <tr>
-        <td><%= route.city_o_id %></td>
-        <td><%= route.city_y_id %></td>
+        <td><%= route.city_o.name_city %></td>
+        <td><%= route.city_y.name_city %></td>
         <td><%= link_to 'Show', route %></td>
         <td><%= link_to 'Edit', edit_route_path(route) %></td>
         <td><%= link_to 'Destroy', route, method: :delete, data: { confirm: 'Are you sure?' } %></td>

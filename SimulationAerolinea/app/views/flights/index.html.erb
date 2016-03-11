@@ -18,8 +18,8 @@
     <% @flights.each do |flight| %>
       <tr>
         <td><%= flight.route.define_route%></td>
-        <td><%= flight.airplane_id %></td>
-        <td><%= flight.pilot_id %></td>
+        <td><%= flight.airplane.reference %></td>
+        <td><%= flight.pilot.identificacion %></td>
         <td><%= flight.date.strftime("%B %d %Y %H:%M:%S") %></td>
         <td><%= number_to_currency flight.price %></td>
         <td><%= link_to 'Show', flight %></td>

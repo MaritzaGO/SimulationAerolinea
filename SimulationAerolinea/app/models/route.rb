@@ -17,7 +17,7 @@ end
 
 
 def define_route
-	"#{self.city_o.name_city}" - "#{self.city_y.name_city}"
+	"#{self.city_o.name_city}" "-" "#{self.city_y.name_city}"
 end
 
 end

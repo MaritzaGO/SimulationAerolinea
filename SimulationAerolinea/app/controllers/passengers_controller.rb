@@ -1,5 +1,5 @@
 class PassengersController < ApplicationController
-  before_action :set_passenger, only: [:show, :edit, :update, :destroy]
+  before_action :set_passenger, only: [:show, :edit, :update, :destroy, :buy_ticket]
 
   # GET /passengers
   # GET /passengers.json
@@ -17,7 +17,7 @@ class PassengersController < ApplicationController
     @flight= Flight.find(params[:flight])
     @passenger.flights << @flight
     @passenger.save
-    redirect_to flights_path, notice: "Tiquete comprado"
+    redirect_to flights_path, notice: "Su tiquete ha sido comprado"
   end
 
 
